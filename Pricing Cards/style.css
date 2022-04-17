@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import url("reset.css");
+html, body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #19223E;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+body .card {
+  margin: auto;
+  border: 8px solid #212C4D;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+body .card:hover {
+  border-color: #7A3AF4;
+}
+body .card .plan {
+  font-size: 20px;
+  margin: 50px auto 0px auto;
+}
+body .card .storage {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 10px auto 5px auto;
+}
+body .card .pricing {
+  margin: 10px auto 0px auto;
+}
+body .card .purchase {
+  margin: 40px auto 0px auto;
+  width: 197px;
+  height: 59px;
+  background: #19223E;
+  cursor: pointer;
+  color: #FFFFFF;
+  border: 1px solid #7A3AF4;
+  border-radius: 10px;
+}
+body .card .purchase:hover {
+  background: #7A3AF4;
+}
+body .card .divider {
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background: #212C4D;
+  margin: 45px auto 0px auto;
+}
+body .card .list {
+  margin: 40px auto 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+body .card .list span {
+  margin: auto;
+  margin-bottom: 10px;
+}
+body .card .list span::before {
+  content: "✓";
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,121 @@
+@import url('reset.css');
+
+html,body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background:#EDEFF6;
+    .container{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        width: 370px;
+        height: 600px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid #979797;
+        .top{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height:250px;
+            background: #252041;
+            color: #fff;
+            .question{
+                margin-top: 50px ;
+                margin-left: 55px;
+                font-size:28px;
+                font-weight: bolder;
+            }
+            .answers{
+                margin-left: 55px;
+                margin-top: 50px ;
+                margin-bottom: 50px;
+                display: flex;
+                flex-direction: row;
+                font-size: 18px;
+                font-weight: bold;
+                #Oslo{
+                    margin-left: 55px;
+                }
+            }
+        }
+        .bottom{
+            display:flex ;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            .question{
+                
+                margin-top: 20px;
+                font-size: 28px;
+                font-weight: bold;
+                color: #261F43;
+            }
+            .answers{
+                display: flex;
+                flex-direction: row;
+                //margin-left: 55px;
+                margin-top:45px ;
+                align-items: center;
+                justify-content: center;
+                .answer{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100px;
+                    height: 108px;
+                    text-decoration: none;
+                    color:#261F43 ;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10px;
+                    svg{
+                        max-width: 40px;
+                        max-height: 40px;
+                    }
+                    .four{
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        svg{
+                            max-width: 20px;
+                            max-height: 20px;
+                        }
+                    }
+                    .six{
+                        grid-template-columns: auto auto;
+                        max-width: 70px;
+                        svg{
+                            max-width: 20px;
+                            max-height: 20px;
+                        }
+                    }
+                    .desc{
+                        margin-top: 15px;
+                    }
+                    &:hover{
+                        background-color:#261F43 ;
+                        color: #fff;
+                        svg circle, svg #Path-2{
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+            .continuebtn{
+                background: #D81D60;
+                color: #fff;
+                border: none;
+                border-radius: 10px;
+                width: 300px;
+                height: 50px;
+                margin:auto;
+                font-size: 20px;
+                cursor: pointer;
+                box-shadow: rgba($color: #EA005F, $alpha: 0.57) 0px 15px 13px;
+            }
+        }
+    }
+}

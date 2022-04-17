@@ -1,0 +1,87 @@
+@import url('reset.css');
+
+html,body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+body{
+    background: #FFFBFA;
+    .container{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        background: #fff;
+        width: 60vw;
+        height: 70vh;
+        border-radius: 15px;
+        padding: 20px;
+        .left{
+            width: 50%;
+            
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .right{
+            margin-left: 45px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            
+            .title{
+                margin-bottom: 14px;
+            }
+            label{
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .input{
+                border: 1px solid #D9D5D4;
+                background: #FFFBFA;
+                border-radius: 5px;
+                font-weight: bold;
+                width: 200px;
+                padding: 10px 0px;
+                margin-bottom: 20px;
+                text-indent: 10px;
+                color: #161C32;
+            }
+            .login{
+                cursor: pointer;
+                background: #A04625;
+                color: #fff;
+                border-radius: 5px;
+                width: 200px;
+                height: 35px;
+                margin-bottom: 10px;
+            }
+            .or{
+                font-size: 16px;
+                color: #8A8B95;
+                font-weight: lighter;
+            }
+            .linkedin{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                background: #0D65C2;
+                color: #fff;
+                border-radius: 5px;
+                width: 200px;
+                height: 35px;
+                margin-top: 10px;
+            }
+            .register{
+                margin-top: auto;
+                font-size: 14px;
+                color:#0D65C2;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,299 @@
+@import url('reset.css');
+
+html,body{
+    display: flex;
+    width: 1600px;
+    height: 1200px;
+    background: #E8E8FD;
+}
+body{
+    .orange-box{
+        position: absolute;
+        top: 108px;
+        left: 79px;
+        background: #EE4D38;
+        width: 276px;
+        height: 1009px;
+        border-radius: 46px;
+        
+    }
+    .container{
+        position: absolute;
+        top: 160px;
+        left: 140px;
+        background: #FFFFFF;
+        width: 1319px;
+        height: 879px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        margin-bottom: 20px;
+        .left{
+            width: 260px;
+            height: 100%;
+            background: #F8F8FF;
+            display: flex;
+            flex-direction: column;
+            
+            .profile{
+                cursor: pointer;
+                margin-top: 58px;
+                margin-bottom: 49px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                .pp{
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 17px;
+                }
+                .infos{
+                    display: flex;
+                    flex-direction: column;
+                    .name{
+                        margin-left: 14px;
+                        color: #1A194D;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    .user-name{
+                        margin-left: 14px;
+                        color: #62618F;
+                        font-size: 14px;
+                        
+                    }
+                    
+                }
+                
+            }
+            .item{
+                display: flex;
+                flex-direction: row;
+                color: #62618F;
+                margin-left: 22px;
+                padding: 14px 0;
+                height: 48px;
+                a{
+                    padding-left: 16px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+                svg{
+                    width: 32px;
+                    height: 32px;
+                }
+                &:last-child{
+                    margin-top: auto;
+                    margin-bottom: 29px;
+                }
+                &:hover{
+                    a{
+                        color: #1A194D;
+                    }
+                    svg{
+                        path{
+                            stroke: #1A194D;
+                        }
+                    }
+                    &:before{
+                        display: flex;
+                        content: "";
+                        width: 6px;
+                        height: 48px;
+                        background: #EE4D38;
+                        border-radius: 24px;
+                    }
+                }
+                &:before{
+                    display: flex;
+                    content: "";
+                    width: 6px;
+                    height: 48px;
+                    background: transparent;
+                    border-radius: 24px;
+                }
+            }
+            .active{
+                a{
+                    color: #1A194D;
+                }
+                svg{
+                    path{
+                        stroke: #1A194D;
+                    }
+                }
+                &:before{
+                    display: flex;
+                    content: "";
+                    width: 6px;
+                    height: 48px;
+                    background: #EE4D38;
+                    border-radius: 24px;
+                }
+            }
+        }
+        .right{
+            display: flex;
+            flex-direction: row;
+            background-image: linear-gradient(to bottom right, #F8F8FF, #fff);
+            .rleft{
+                margin-left: 72px;
+                h2{
+                    color: #1A194D;
+                    font-size: 32px;
+                    font-weight: bold;
+                    margin-top: 65px;
+                }
+            
+            h4{
+                margin-top: 49px;
+                color: #1A194D;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .description{
+                color: #62618F;
+                font-size: 14px;
+                margin-top: 4px;
+                font-weight: bold;  
+            }
+            .table{
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                
+                .row{
+                    display: flex;
+                    flex-direction: row;
+                    color: #1A194D;
+                    font-size: 16px;
+                    font-weight: bold;
+                    height: 40px;
+                    
+                    border-radius: 8px;
+                    align-items: center;
+                    padding: 16px;
+                    &:first-child{
+                        color: #62618F;
+                    }
+                    .col{
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 114px;
+                        width: 93px;
+                        &:first-child{
+                            margin-left: 0px;
+                        }
+                        .download-btn{
+                            width: 114px;
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center ;
+                            border-radius: 8px;
+                            border: 1px solid #CBCBD9;
+                            color: #1A194D;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .active{
+                    background-color: #fff;
+                }
+                .load-btn{
+                    color: #EE4D38;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-decoration: underline;
+                    margin-top: 16px;
+                }
+            }
+                h3{
+                    margin-top: 81px;
+                    color: #1A194D;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                .information{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: 22px;
+                    img{
+                        
+                    }
+                    .card-info{
+                        width: 384px;
+                        margin-left: 16px;
+                        color: #1A194D;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    .remove-btn{
+                        width: 98px;
+                        height: 40px;
+                        border-radius: 8px;
+                        border: 1px solid #CBCBD9;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #1A194D;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+        }
+        .rright{
+            display: flex;
+            margin-top: 162px;
+            margin-left: 72px;
+            margin-right: 56px;
+            .orange-plan{
+                display: flex;
+            flex-direction: column;
+                background: #EE4D38;
+                width: 258px;
+                height: 221px;
+                border-radius: 16px;
+                color: #FFFFFF;
+                *{
+                    margin-left: 32px;
+                }
+                h2{
+                    margin-top: 32px;
+                    font-size: 16px;
+                    font-weight:bold;
+
+                }
+                .plan{
+                    margin-top: 16px;
+                    font-size: 24px;
+                    font-weight:bold;
+                }
+                .renew-date{
+                    margin-top: 4px;
+                    font-size: 14px;
+                    font-weight:600;
+                }
+                .cancel-btn{
+                    margin-top: 16px;
+                    font-size: 16px;
+                    font-weight:600;
+                    color: #FFFFFF;
+                    width: 194px;
+                    height: 40px;
+                    border: 1px solid rgba($color: #FFFFFF, $alpha: 0.5);
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+        }
+    }
+    
+}

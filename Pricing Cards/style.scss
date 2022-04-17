@@ -1,0 +1,75 @@
+@import url('reset.css');
+
+html,body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: #19223E;
+    color: #FFFFFF;
+    font-size: 20px;
+    .card{
+        margin: auto;
+        border: 8px solid #212C4D;
+        width: 300px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    
+        &:hover{
+            border-color: #7A3AF4;
+        }
+        
+        .plan{
+            font-size: 20px;
+            margin: 50px auto 0px auto;
+        }
+
+        .storage{
+            font-size: 60px;
+            font-weight: bold;
+            margin: 10px auto 5px auto;
+        }
+
+        .pricing{
+            margin: 10px auto 0px auto;
+        }
+        .purchase{
+            margin: 40px auto 0px auto;
+            width: 197px;
+            height: 59px;
+            background: #19223E;
+            cursor: pointer;
+            color:#FFFFFF;
+            border: 1px solid #7A3AF4;
+            border-radius: 10px;
+            &:hover{
+                background: #7A3AF4;
+            }
+        }
+
+        .divider{
+            display: flex;
+            width: 100%;
+            height: 2px;
+            background: #212C4D;
+            margin: 45px auto 0px auto;
+        }
+
+        .list{
+            margin: 40px auto 50px auto;
+            display: flex;
+            flex-direction: column;
+            span{
+                margin: auto;
+                margin-bottom: 10px;
+                &::before{
+                    content: "✓";
+                }
+            }
+        }
+    }
+}
