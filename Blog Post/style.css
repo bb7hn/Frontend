@@ -1,0 +1,82 @@
+html {
+  display: flex;
+}
+
+body {
+  background-color: #EEEFFC;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.card {
+  color: #313767;
+  display: flex;
+  flex-direction: column;
+  width: 336px;
+  min-height: 600px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 20px;
+  overflow-x: hidden;
+}
+.card .thumbnail {
+  max-width: 100%;
+}
+.card .content, .card .information {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.card .content .title {
+  font-size: 30px;
+  line-height: 38px;
+}
+.card .content .abstract {
+  font-size: 12px;
+  line-height: 24px;
+}
+.card .information {
+  width: calc(100% - 50px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: auto;
+  border-top: 1px #E4E9FA solid;
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+.card .information .authorimg {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  margin-left: 0px;
+}
+.card .information .description {
+  margin-left: 10px;
+}
+.card .information .description .name {
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0;
+}
+.card .information .description .role {
+  font-size: 10px;
+  line-height: 13px;
+  margin: 0;
+}
+.card .information .date {
+  margin-left: auto;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 1068px) {
+  body {
+    flex-direction: column;
+  }
+  body .card {
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */
