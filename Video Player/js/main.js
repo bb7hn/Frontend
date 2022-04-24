@@ -25,7 +25,7 @@ video.addEventListener("timeupdate", updateVideoTimeText);
 videoProgress.addEventListener("change", function (e) {
   video.currentTime = (e.target.value * video.duration) / 100;
   if (video.paused) video.play();
-  playPauseIcon.src = "../img/stop.svg";
+  playPauseIcon.src = "img/stop.svg";
 });
 
 videoProgress.addEventListener("mouseover", function () {
@@ -44,8 +44,8 @@ videoContainer.addEventListener("mousemove", (e) => {
 
 volumeProgress.addEventListener("change", function (e) {
   video.volume = e.target.value / 100;
-  if (video.volume > 0) muteUnmuteIcon.src = "../img/volume.svg";
-  else muteUnmuteIcon.src = "../img/mute.svg";
+  if (video.volume > 0) muteUnmuteIcon.src = "img/volume.svg";
+  else muteUnmuteIcon.src = "img/mute.svg";
 });
 
 video.addEventListener("contextmenu", (e) => e.preventDefault());
@@ -54,14 +54,14 @@ video.addEventListener("dblclick", fullScreen);
 
 video.addEventListener("play", () => {
   playPauseBtn.style.display = "none";
-  playPauseIcon.src = "../img/stop.svg";
+  playPauseIcon.src = "img/stop.svg";
   controlBox.addEventListener("mouseout", hideControlBox);
   hideControlBox();
 });
 
 video.addEventListener("pause", () => {
   playPauseBtn.style.display = "flex";
-  playPauseIcon.src = "../img/play.svg";
+  playPauseIcon.src = "img/play.svg";
   controlBox.removeEventListener("mouseout", hideControlBox);
   showControlBox();
 });
@@ -192,11 +192,11 @@ function mute() {
     lastVolumeValue = video.volume;
     video.volume = 0;
     volumeProgress.value = 0;
-    muteUnmuteIcon.src = "../img/volume.svg";
+    muteUnmuteIcon.src = "img/volume.svg";
   } else {
     video.volume = lastVolumeValue;
     volumeProgress.value = lastVolumeValue * 100;
-    muteUnmuteIcon.src = "../img/mute.svg";
+    muteUnmuteIcon.src = "img/mute.svg";
   }
 }
 
