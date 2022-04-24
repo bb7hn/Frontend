@@ -74,4 +74,18 @@ body .card .list span::before {
 }
 body .selected_card {
   border-color: #7A3AF4;
+}
+body .selected_btn {
+  background: #7A3AF4 !important;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    margin: auto;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  body .card {
+    margin: 10px auto;
+  }
 }/*# sourceMappingURL=style.css.map */
