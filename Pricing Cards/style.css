@@ -20,6 +20,10 @@ body .card {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 body .card:hover {
   border-color: #7A3AF4;
@@ -67,4 +71,7 @@ body .card .list span {
 }
 body .card .list span::before {
   content: "✓";
+}
+body .selected_card {
+  border-color: #7A3AF4;
 }/*# sourceMappingURL=style.css.map */

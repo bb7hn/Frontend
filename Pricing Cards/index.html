@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
+    <div id="1" class="card selected_card" >
         <span class="plan">BASIC</span>
         <span class="storage">100GB</span>
         <p class="pricing">1 month, then $1,7/month</p>
-        <button class="purchase">Purchase</button>
+        <button class="purchase" onclick="selectCard(this.parentNode.id)">Purchase</button>
         <span class="divider"></span>
         <div class="list">
             <span>100 GB storage</span>
@@ -20,11 +20,11 @@
             <span>Extra member benefits</span>
         </div>
     </div>
-    <div class="card">
+    <div id="2" class="card" >
         <span class="plan">STANDARD</span>
         <span class="storage">200GB</span>
         <p class="pricing">1 month, then $2,9/month</p>
-        <button class="purchase">Purchase</button>
+        <button class="purchase" onclick="selectCard(this.parentNode.id)">Purchase</button>
         <span class="divider"></span>
         <div class="list">
             <span>200 GB storage</span>
@@ -32,11 +32,11 @@
             <span>Extra member benefits</span>
         </div>
     </div>
-    <div class="card">
+    <div id="3" class="card">
         <span class="plan">PREMIUM</span>
         <span class="storage">2TB</span>
         <p class="pricing">1 month, then $8,9/month</p>
-        <button class="purchase">Purchase</button>
+        <button class="purchase" onclick="selectCard(this.parentNode.id)">Purchase</button>
         <span class="divider"></span>
         <div class="list">
             <span>2TB storage</span>
@@ -44,5 +44,19 @@
             <span>Extra member benefits</span>
         </div>
     </div>
+    <script>
+        function selectCard(id){
+            let cards = document.getElementsByClassName("card");
+            let i = 0;
+            for(null;i<cards.length;i++){
+                if(cards[i].id == id){
+                    cards[i].classList.add("selected_card");
+                    continue;
+                }
+                cards[i].classList.remove("selected_card");
+            }
+        }
+        selectCard(1);
+    </script>
 </body>
 </html>
