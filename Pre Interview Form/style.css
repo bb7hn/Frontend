@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Source+Sans+Pro:wght@400;600;700&display=swap");
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+body, html {
+  margin: 0;
+  max-width: 100vmax;
+  width: 100%;
+  min-height: 100%;
+  background: #1d3557;
+  display: flex;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  min-height: 100vh;
+  margin: 10px auto;
+  border-radius: 12px;
+  color: #000;
+}
+#main #title {
+  margin: 5px auto;
+  color: #EFEFEF;
+  font-family: "Koulen", cursive;
+}
+#main #description {
+  margin: 5px auto 1rem auto;
+  color: #afafaf;
+  font-family: "Koulen", cursive;
+}
+#main #survey-form {
+  background: #457b9d;
+  max-width: calc(100% - 4rem);
+  width: 398px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem auto;
+  border-radius: 6px;
+  padding: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#main #survey-form .question {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(29, 27, 27);
+}
+#main #survey-form label {
+  font-size: 1.4rem;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  color: #EFEFEF;
+  cursor: pointer;
+}
+#main #survey-form input[type=text], #main #survey-form input[type=email], #main #survey-form input[type=number] {
+  border-radius: 6px;
+  margin: 0;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  margin-top: 2px;
+  font-size: 1.2rem;
+}
+#main #survey-form select {
+  -webkit-appearance: none;
+  padding: 0.45rem;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  background-image: url("https://www.svgrepo.com/show/80156/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
+  background-size: 20px;
+  margin: 12px 0;
+  font-size: 1.2rem;
+}
+#main #survey-form select:focus {
+  outline: none;
+  border: none;
+}
+#main #survey-form input[type=radio], #main #survey-form input[type=checkbox] {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+#main #survey-form textarea {
+  resize: none;
+  border-radius: 6px;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  margin-top: 0.1rem;
+  font-size: 1rem;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+#main #survey-form textarea::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+#main #survey-form textarea ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+#main #survey-form textarea::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+#main #survey-form textarea::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 6px;
+}
+#main #survey-form #submit {
+  background: #f1faee;
+  border-radius: 6px;
+  border: none;
+  margin: 25px auto 0px auto;
+  width: 15rem;
+  height: 2rem;
+  cursor: pointer;
+}
+#main #survey-form #submit:hover {
+  background-color: #d1eec7;
+}
+
+@media screen and (max-width: 495px) {
+  #main {
+    width: 95vw;
+    margin: auto !important;
+  }
+}
+@media screen and (max-width: 397px) {
+  body {
+    background: #000;
+    color: #EFEFEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body::after {
+    content: "Screen Size is too small (min. width is 398px)";
+  }
+
+  main {
+    display: none !important;
+  }
+}/*# sourceMappingURL=style.css.map */

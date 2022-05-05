@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Interview Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main">
+        <h1 id="title">Pre Interview Form</h1>
+        <p id="description">We'll be glad to see you as a part of our company.</p>
+        <form id="survey-form">
+            <label class="question"  id="name-label" for="name" >Name:</label>
+                <input type="text" name="name" id="name" placeholder="Name:" required>
+
+            <label class="question"  id="email-label" for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email:" required>
+
+            <label class="question"  id="number-label" for="number">Age:</label>
+                <input type="number" min="18" max="45" name="number" id="number" placeholder="How old are you:">
+
+            <select name="dropdown" id="dropdown" required>
+                <option value="" disabled selected>Which position do you interest with?</option>
+                <option value="1">Frontend Development</option>
+                <option value="2">Backend Development</option>
+            </select>
+            
+
+            <label class="question" id="radio-label" for="#">When you can start to work:</label>
+                <div class="answer">
+
+                    <input type="radio" value="1" name="radio" id="radio1">
+                    <label id="radio-label" for="radio1">
+                        Right Now
+                    </label>
+                    
+                </div>
+                <div class="answer">
+
+                    <input type="radio" value="2" name="radio" id="radio2">
+                    <label id="radio-label" for="radio2">
+                        About 1 month
+                    </label>
+                    
+                </div>
+                <div class="answer">
+
+                    <input type="radio" value="3" name="radio" id="radio3">
+                    <label id="radio-label" for="radio3">
+                        More than a month.
+                    </label>
+                    
+                </div>
+
+                
+                
+            <label class="question" id="checkbox-label" for="#">Select the options which fits you:</label>
+                <div class="answer">
+
+                    <input type="checkbox" value="1" name="group2" id="office">
+                    <label id="radio-label" for="office">
+                        I can work at the office.
+                    </label>
+                    
+                </div>
+                <div class="answer">
+
+                    <input type="checkbox" value="2" name="group2" id="remote">
+                    <label id="radio-label" for="remote">
+                        I can work remotely.
+                    </label>
+                    
+                </div>
+                <div class="answer">
+                    
+                    <input type="checkbox" value="3" name="group2" id="hybrid">
+                    <label id="radio-label" for="hybrid">
+                        I can work hybrid.
+                    </label>
+                    
+                </div>
+
+            <label class="question" id="radio-label" for="cover-letter">Add a cover letter if you want:</label>
+                <textarea name="" id="cover-letter" rows="6" placeholder="Cover Letter:"></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
