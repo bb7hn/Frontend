@@ -1,0 +1,163 @@
+@import url('reset.css');
+$text-dark : #132B50;
+$text-light:#fff;
+$bg-gray: rgba(19, 43, 80,.4);
+$bg-light:$text-light;
+html,body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: $bg-light;
+    .card-body{
+        background-color: $bg-gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 918px;
+        min-width: 1200px;
+        .card{
+            background-color: $bg-light;
+            border-radius: 1.2em;
+            width: 100%;
+            max-width: calc(508px - 170px);
+            min-height: 312px;
+            padding: 85px;
+            color: $text-dark;
+            .title{
+                font-weight: bold;
+                font-size: 32px;
+                line-height: 1;
+                margin-bottom: 32px;
+            }
+            .user-info{
+                margin-bottom: 32px;
+                align-items: center;
+                .profile-picture{
+                    width: 78px;
+                    height: 78px;
+                }
+                .text-group{
+                    margin-left: 16px;
+                    .account-type{
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    .name{
+                        font-size: 18px;
+                        font-weight: bold;
+                        
+                    }
+                }
+            }
+            .user-password{
+                margin-bottom: 32px;
+                .info{
+                    margin-bottom: 8px;
+                    cursor: pointer;
+                }
+            }
+            .actions{
+                align-items: center;
+                .switch{
+                    align-items: center;
+                    label{
+                        margin-left: 8px;
+                    }
+                }
+                .primary-button{
+                    margin: 0 0 0 auto;
+                }
+            }
+            .card-footer{
+                margin: 40px 0;
+                a{
+                    color: $text-dark;
+                    text-decoration: underline;
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+            }
+            ion-icon{
+                width: 27px;
+                height: 27px;
+            }
+        }
+    }
+}
+.row{
+    display: flex;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.input-group{
+    border: 1px solid $text-dark;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 57px;
+    border-radius: 8px;
+    padding: 2px;
+    align-items: center;
+    padding: 16px;
+    .icon{
+        cursor: pointer;
+        width: 27px;
+        height: 27px;
+    }
+    ion-icon{
+        &:last-child{
+            margin-left: auto;
+        }
+        transition: all .5s;
+    }
+    .custom-input{
+        margin: 0 10px;
+        width: 100%;
+        &::placeholder{
+            color: $text-dark;
+            opacity: 1;
+        }
+    }
+}
+.d-none{
+    display: none;
+}
+.custom-switch{
+    display: flex;
+    width: 60px;
+    height: 36px;
+    box-sizing: border-box;
+    border: 1px solid $text-dark;
+    border-radius: 44px;
+    cursor: pointer;
+    .toggle{
+        content: '';
+        width: 22px;
+        height: 22px;
+        background-color: $text-dark;
+        border-radius: 50%;
+        margin: auto 0 auto 7px;
+        transition: background .3s;
+    }
+    .active{
+        margin: auto 7px auto auto;
+        background-color: lighten($color: $text-dark, $amount: 30);
+    }
+}
+.primary-button{
+    background-color: $text-dark;
+    color: $text-light;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover{
+        background-color: lighten($color: $text-dark, $amount: 15);
+    }
+}
